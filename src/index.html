@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Espacios DFR</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <meta name="description" content="Servicios principales de Espacios DFR: revestimientos, aislación, carpintería metálica y proyectos integrales." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="servicios.html">Espacios DFR</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Servicios Principales</h1>
+        <p>Soluciones completas para todos tus proyectos mobiliarios.</p>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <div class="services-grid">
+        <article class="service-card" data-service-id="revestimientos">
+          <div class="service-icon" aria-hidden="true">🛠️</div>
+          <h3 class="service-title">Fabricación a Medida</h3>
+          <p class="service-desc">Diseñamos y fabricamos muebles únicos adaptados a tus necesidades específicas, espacios y estilo personal.</p>
+          <ul class="service-features">
+            <li>Muebles personalizados</li>
+            <li>Dormitorios completos</li>
+            <li>Mobiliarios de oficiona</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-service-id="aislacion">
+          <div class="service-icon" aria-hidden="true">🎨</div>
+          <h3 class="service-title">Restauración y pintura</h3>
+          <p class="service-desc">Devolvemos la vida a muebles antiguos y damos nueva apariencia a piezas existentes con técnicas profesionales.</p>
+          <ul class="service-features">
+            <li>Restauración de muebles</li>
+            <li>Pintura decorativa y acabados especiales</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-service-id="carpinteria">
+          <div class="service-icon" aria-hidden="true">🪑</div>
+          <h3 class="service-title">Diseño interior</h3>
+          <p class="service-desc">Asesoramiento completo en diseño de interiores, optimizando espacios y creando ambientes funcionales y estéticos.</p>
+          <ul class="service-features">
+            <li>Consultoria de diseño</li>
+            <li>Planificación espacios</li>
+            <li>Coordinación de proyectos</li>
+          </ul>
+        </article>
+
+        <article class="service-card" data-service-id="proyectos">
+          <div class="service-icon" aria-hidden="true">📐</div>
+          <h3 class="service-title">Proyectos Integrales</h3>
+          <p class="service-desc">Gestión y ejecución de proyectos completos, coordinando oficios y supervisión técnica.</p>
+          <ul class="service-features">
+            <li>Gestion de proyectos</li>
+            <li>Linea cooporativa</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Espacios DFR. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="politicas.html">Política de privacidad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="../dist/js/main.js"></script>
+  <script>
+    // Pequeño fallback para el año en caso de que TypeScript aún no esté cargado
+    (function(){ const y = new Date().getFullYear(); const el = document.getElementById('year'); if(el) el.textContent = String(y); })();
+  </script>
+</body>
+</html>
